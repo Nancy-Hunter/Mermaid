@@ -1,0 +1,163 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+html {
+        font-size: 10px;
+        background: url('https://staticdelivery.nexusmods.com/mods/1303/images/thumbnails/5266/5266-1579851416-1358179739.jpeg') center ;
+        background-size: 100vh;
+        background-repeat: no-repeat;
+  }
+  
+  body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  h1 {
+    text-align:center;
+    text-transform:uppercase;
+    font-size:26px; letter-spacing:1px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 16px 0;
+    grid-gap: 30px;
+  }
+  
+  h1:after, h1:before {
+    content: " ";
+    display: block;
+    border-bottom: 2px solid #ccc;
+    background-color:#f8f8f8;
+  }
+  
+  .keys {
+    position: relative;
+    display: flex; 
+    flex: 1; 
+    min-height: 75vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+  }
+  
+  .playing {
+    transform: scale(1.1);
+    border-color: #fdf092;
+    box-shadow: 0 0 1rem #fdf092;
+  }
+  
+  kbd {
+    display: block;
+    font-size: 4rem;
+    color: #fdf092;
+  }
+
+  .win, .lose {
+      display: none;
+  }
+
+  h2 {
+    text-align: center;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px #5e39de;
+    text-transform:uppercase;
+    position: absolute;
+    overflow: hidden;
+    top: 10%;
+    left: 50%;
+    font-size: 3rem;
+    color: #420f98;
+    z-index: 3;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+
+  img {
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    }
+    
+  button {
+    text-transform: uppercase;
+    appearance: button;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 0 10px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+button:focus {
+  text-decoration: none;
+}
+
+button:hover {
+  text-decoration: none;
+}
+
+button:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+button:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 12px 50px;
+  }
+}
+  
