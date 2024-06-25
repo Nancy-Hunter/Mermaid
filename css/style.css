@@ -101,6 +101,9 @@ html {
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
   }
+  .bottom {
+    top:90%;
+  }
 
   img {
     height: 100%;
@@ -159,5 +162,14 @@ button:not([disabled]):active {
   button {
     padding: 12px 50px;
   }
+}
+
+
+.worms {
+    height: 6rem;
+    position: fixed;
+    z-index: 1;
+    border: .5rem solid #d97b07;
+    box-shadow: .1rem .2rem .2rem .1rem #8b520b;
 }
   
