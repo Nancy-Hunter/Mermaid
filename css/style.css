@@ -165,8 +165,8 @@ button:not([disabled]):active {
 }
 
 .moreClues {
-    display: inline-block;
-    width: 10%;
+    display: block;
+    height: 6rem;
 }
 .worms {
     height: 6rem;
