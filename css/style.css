@@ -171,5 +171,6 @@ button:not([disabled]):active {
     z-index: 1;
     border: .5rem solid #d97b07;
     box-shadow: .1rem .2rem .2rem .1rem #8b520b;
+    overflow-y: scroll;
 }
   
